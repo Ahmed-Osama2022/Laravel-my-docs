@@ -23,7 +23,7 @@ php artisan serve --port 3000
   php artisan route:list
 ```
 
-- To make a middleware
+- To make a middleware:
 ```bash
 php artisan make:middleware <MiddlewareName>
 ```
@@ -34,9 +34,9 @@ php artisan make:middleware <MiddlewareName>
   php artisan middleware:list
   ```
 
----
+----
 
-
+### Controllers
 
 - To make a controller
 
@@ -51,15 +51,15 @@ php artisan make:controller -r <controllerName>
 
 ---
 
+## Views
 
+### Blade Template Engine
 
 - To make a view (Blade Template Engine)
 
   ```bash
   php artisan make:view <viewname>
   ```
-
-  
 
 - To make a view (Blade Template Engine) and make it inside a directory
 
@@ -75,7 +75,40 @@ php artisan make:view <folderName.viewname>
   php artisan view:cache 
   ```
 
-  
+
+- Now  to cleat these files (cached views)
+
+  ```bash
+  php artisan view:clear
+  ```
+
+- To make an App Service Provider
+
+```bash
+php artisan make:provider <AppServiceProviderName>
+```
+
+---
+
+### Blade Template Engine (Components)
+
+- To make an anonymous (Regular) component.
+
+```bash
+php artisan make:component <ComponentName> --view
+```
+
+<p>This will make an anonymous component in /resources/views/</p>
+
+- To make a class component  
+
+```bash
+php artisan make:component <ComponentName>
+```
+
+<p>This will make an class component in /App/View/Components/</p>
+
+<p>And will make the component at /resources/views/</p>
 
 
 
